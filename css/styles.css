@@ -84,7 +84,9 @@ margin-right: 76px;
 .nav-list-link:hover, .nav-list-link:focus{
     color: #404BBF;
 }
- 
+ .nav-list-link.active{
+    color: #404bbf ;
+ }
    
 
 .nav-list-link.active::after{
@@ -96,6 +98,7 @@ margin-right: 76px;
     background: var(--OCEAN, #404BBF);
     position: absolute;
     bottom: -1px;
+    
 }
 
 .address-section{
@@ -119,6 +122,7 @@ margin-right: 76px;
 .page-header .container{
     display: flex;
     align-items: center;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     
 }
 
@@ -158,7 +162,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-width: 100%;
+max-width: 1440px;
 }
 
 /* .section-hero .container{
@@ -348,11 +352,8 @@ text-align: center;
 .team-icon-list-item{
     width: 40px;
         height: 40px;
-margin-top: 8px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
+margin-top: 8px;}
+
 
 .team-icon-list-link{
     background-color: #4D5AE5;
@@ -360,13 +361,17 @@ align-items: center;
         height: 100%;
         border-radius: 50%;
         padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 
 }
 
  .team-icon-list-link:hover, .team-icon-list-link:focus{
-    background-color: #31D0AA;
+    background-color: #404bbf;
 } 
 
 
@@ -429,8 +434,8 @@ row-gap: 48px;
     position: relative;
      overflow: hidden; 
 } 
-.our-portf-list-item:hover .overlay{
-    transform: translateY(0);
+.our-portf-list-item:hover .overlay {
+    transform: translateY(0%);
 }
 
 .our-portf-list-item{
@@ -442,6 +447,7 @@ row-gap: 48px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+        transform: translateY(0%);
 }
 
 .our-portf-list-name{
@@ -535,5 +541,6 @@ padding-bottom: 100px;
 
  .logo-text-box{
     display: block;
+    margin-right: 120px;
   
  }
