@@ -122,7 +122,7 @@ margin-right: 76px;
 .page-header .container{
     display: flex;
     align-items: center;
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    
     
 }
 
@@ -148,6 +148,7 @@ margin-right: 76px;
 
 .page-header{
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -414,36 +415,25 @@ row-gap: 48px;
 .overlay-text{
     color: var(--CLOUD, #F4F4FD);
     background-color: #4D5AE5;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        padding: 40px 32px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       
-}
-/* .overlay {
-    /* background-color: #4D5AE5;
-    /* position: absolute; */
-    /* top: 0;
-    left: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
-} */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
+}
 .overlay-box{
     position: relative;
      overflow: hidden; 
 } 
-.our-portf-list-item:hover .overlay {
+ .our-portf-list-item:hover .overlay-text{
     transform: translateY(0%);
-}
+} 
 
 .our-portf-list-item{
     width: calc((100% - 48px) / 3);
@@ -454,7 +444,7 @@ row-gap: 48px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-        transform: translateY(0%);
+        
 }
 
 .our-portf-list-name{
@@ -544,6 +534,10 @@ padding-bottom: 100px;
  }
  .page-footer .team-icon-list-link{
     padding: 8px;
+ }
+
+ .page-footer .team-icon-list-link:hover, .page-footer .team-icon-list-link:focus{
+    background-color: #31d0aa;
  }
 
  .logo-text-box{
