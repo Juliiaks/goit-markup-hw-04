@@ -164,11 +164,10 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 max-width: 1440px;
+margin: 0 auto;
 }
 
-/* .section-hero .container{
-    max-width: 1440px ;
-} */
+
 
 .hero-title{
     color:  #FFF;
